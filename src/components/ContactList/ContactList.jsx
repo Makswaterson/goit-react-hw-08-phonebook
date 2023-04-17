@@ -1,8 +1,11 @@
 import { ContactItem } from '../ContactItem/ContactItem';
 import { StyledList, Wrapper } from './ContactList.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectAllContacts, selectVisibleContacts } from 'redux/selectors';
-import { deleteContact } from 'redux/operations';
+import {
+  selectAllContacts,
+  selectVisibleContacts,
+} from 'redux/contacts/selectors';
+import { deleteContact } from 'redux/contacts/operations';
 import { toast } from 'react-hot-toast';
 
 export const ContactList = () => {

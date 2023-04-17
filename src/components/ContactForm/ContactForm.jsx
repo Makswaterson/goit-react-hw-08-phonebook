@@ -4,8 +4,8 @@ import * as Yup from 'yup';
 import toast from 'react-hot-toast';
 import { FormStyled, Button, FieldStyled, Label } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectAllContacts } from 'redux/selectors';
-import { addContact } from 'redux/operations';
+import { selectAllContacts } from 'redux/contacts/selectors';
+import { addContact } from 'redux/contacts/operations';
 
 const validationContacts = Yup.object().shape({
   name: Yup.string()

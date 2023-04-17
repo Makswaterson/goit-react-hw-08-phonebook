@@ -8,8 +8,8 @@ import {
   selectAllContacts,
   selectError,
   selectIsLoading,
-} from '../redux/selectors';
-import { fetchContacts } from '../redux/operations';
+} from '../redux/contacts/selectors';
+import { fetchContacts } from '../redux/contacts/operations';
 import { Toaster } from 'react-hot-toast';
 
 export const App = () => {
