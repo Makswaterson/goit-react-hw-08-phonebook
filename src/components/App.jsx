@@ -5,9 +5,9 @@ import { Layout } from './Layout';
 // import { PrivateRoute } from './PrivateRoute';
 // import { RestrictedRoute } from './RestrictedRoute';
 import { refreshUser } from 'redux/auth/operations';
-// import { Toaster } from 'react-hot-toast';
+
 import { useAuth } from 'hooks';
-console.log(useAuth);
+
 // import { AppStyled } from './App.styled';
 
 const HomePage = lazy(() => import('../pages/Home'));
@@ -35,13 +35,4 @@ export const App = () => {
       </Route>
     </Routes>
   );
-  // <AppStyled>
-  //   <Toaster />
-  //   <h1>Phonebook</h1>
-  //   <ContactForm />
-  //   {isLoading && !error && <b>Request in progress...</b>}
-  //   <h2>Contacts</h2>
-  //   <Filter />
-  //   {contacts.length > 0 && <ContactList />}
-  // </AppStyled>
 };

@@ -5,11 +5,11 @@ import { useAuth } from 'hooks';
 import { AppStyled } from './AppBar.styled';
 
 export const AppBar = () => {
-  const { isLoggedIn } = useAuth();
+  const { IsLoggedIn } = useAuth();
   return (
     <AppStyled>
       <Navigation />
-      {isLoggedIn ? <UserMenu /> : <AuthNav />}
+      {IsLoggedIn ? <UserMenu /> : <AuthNav />}
     </AppStyled>
   );
 };
