@@ -48,7 +48,7 @@ const contactsSlice = createSlice({
       .addCase(deleteContact.rejected, handleRejected)
       .addCase(updateContact.pending, handlePending)
       .addCase(updateContact.fulfilled, (state, action) => {
-        const index = state.items.findIndex(
+        const index = state.contacts.findIndex(
           contact => contact.id === action.payload.id
         );
         state.contacts[index] = action.payload;

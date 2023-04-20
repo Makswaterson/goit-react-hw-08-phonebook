@@ -7,7 +7,7 @@ export default function Home() {
       <Title>
         Phonebook is ready for you{''}
         {/* <span role="img" aria-label="Phonebook image">
-          <img src={phoneImage} width="150" />
+          <img src={phoneImage} width="100" height="80" />
         </span> */}
       </Title>
     </Container>
