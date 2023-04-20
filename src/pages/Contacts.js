@@ -11,7 +11,6 @@ export default function Contacts() {
   const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
   const contacts = useSelector(selectAllContacts);
-  console.log(isLoading);
 
   useEffect(() => {
     dispatch(fetchContacts());
