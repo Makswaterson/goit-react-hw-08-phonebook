@@ -5,7 +5,6 @@ import { Layout } from './Layout';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
 import { refreshUser } from 'redux/auth/operations';
-
 import { useAuth } from 'hooks';
 
 // import { AppStyled } from './App.styled';
